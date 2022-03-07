@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset ="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="homestyle.css">
+  </head>
+  <body>
+    <audio src="audiosound.mp3" id="myAudio"></audio>
+    <a class="back" href="Home.html" data-text="&nbsp;Go Back">&nbsp;Go Back&nbsp;</a>
+    <p class="line anim-typewriter">Home()</p>
+    <p class="websitetext">This website was made to showcase HTML & CSS capabilities for Mr.Owens class.</p>
+    <button class="button" onClick="playMyAudio()">dont click me.</button>
+      <script>
+        function playMyAudio(){
+          document.getElementById("myAudio").play();
+        }
+      </script>
+  </body>
+</html>

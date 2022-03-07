@@ -1,0 +1,93 @@
+@import url('https:fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #252839;
+    padding: 4em;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Anonymous Pro', monospace;
+}
+.line 
+{
+    position: relative;
+    top: 50%;
+    width: 2em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden; transform: translateY(-50%);
+}
+
+.hovertext {
+    margin-top: 300px;
+    position: relative;
+    display: flex;  
+    justify-content: center;
+  }
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    display: flex;  
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 3px;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+/*Button for Back to Menu*/
+.back 
+{
+    color:rgba(255, 255, 255, 0.75);
+    position:absolute;                 
+    bottom:0;                         
+    Left:0;
+    font-size: 40px;    
+    text-decoration: none;
+}
+
+/*animation*/
+
+.anim-typewriter
+{
+    animation: typewriter 1s steps(10) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter 
+{
+    from{
+        width:0;
+    }
+    to {
+        width: 4em;
+    }
+}
+@keyframes blinkTextCursor 
+{
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}

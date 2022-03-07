@@ -1,0 +1,99 @@
+@import url('https:fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #252839;
+    padding: 4em;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Anonymous Pro', monospace;
+}
+.line 
+{
+    position: relative;
+    top: 50%;
+    width: 2em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden; transform: translateY(-50%);
+}
+.back 
+{
+    color:rgba(255, 255, 255, 0.75);
+    position:absolute;                 
+    bottom:0;                         
+    Left:0;
+    font-size: 40px;    
+    text-decoration: none;
+}
+.icon {
+margin-top: 100px;
+text-align: center;
+}
+.icon a {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background-color: rgb(74, 75, 77);
+	border-radius: 25px;
+	margin: 20px;
+	box-shadow: 3px 3px 10px #f036a2,
+	-4px -4px 10px rgb(73, 29, 168);
+	text-align: center;
+	line-height: 90px;
+	font-size: 50px;
+	border:3px solid #eee;
+	color: #333;
+	transition: .3s;
+}
+
+.icon a:hover {
+	animation: border .6s alternate infinite linear;
+	background-color: #333;
+	color: #eee;
+}
+
+@keyframes border {
+	0% {
+		border:3px solid lightgreen;
+	}
+	50% {
+		border:3px solid salmon;
+	}
+	100% {
+		border:3px solid skyblue;
+	}
+}
+/*animation*/
+
+.anim-typewriter
+{
+    animation: typewriter 1s steps(10) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter 
+{
+    from{
+        width:0;
+    }
+    to {
+        width: 5em;
+    }
+}
+@keyframes blinkTextCursor 
+{
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}

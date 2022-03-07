@@ -1,0 +1,117 @@
+@import url('https:fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #252839;
+    padding: 4em;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Anonymous Pro', monospace;
+}
+.line 
+{
+    position: relative;
+    top: 50%;
+    width: 2em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden; transform: translateY(-50%);
+}
+.back 
+{
+    color:rgba(255, 255, 255, 0.75);
+    position:absolute;                 
+    bottom:0;                         
+    Left:0;
+    font-size: 40px;    
+    text-decoration: none;
+}
+.button
+{
+    background-color: transparent;
+    border: 0;
+    color: #3d3d3d;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+.websitetext
+{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.icon {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+}
+.icon a {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background-color: #eee;
+	border-radius: 25px;
+	margin: 20px;
+	box-shadow: 3px 3px 10px #aeaeae,
+	-4px -4px 10px white;
+	text-align: center;
+	line-height: 90px;
+	font-size: 50px;
+	border:3px solid #eee;
+	color: #333;
+	transition: .3s;
+}
+
+.icon a:hover {
+	animation: border .6s alternate infinite linear;
+	background-color: #333;
+	color: #eee;
+}
+
+@keyframes border {
+	0% {
+		border:3px solid lightgreen;
+	}
+	50% {
+		border:3px solid salmon;
+	}
+	100% {
+		border:3px solid skyblue;
+	}
+}
+/*animation*/
+
+.anim-typewriter
+{
+    animation: typewriter 1s steps(10) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter 
+{
+    from{
+        width:0;
+    }
+    to {
+        width: 4em;
+    }
+}
+@keyframes blinkTextCursor 
+{
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
